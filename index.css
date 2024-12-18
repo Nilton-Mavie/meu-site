@@ -1,0 +1,580 @@
+        /* ESTILO GERAL*/
+
+       /* Estilo global para todo o corpo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o body */
+body {
+    font-family: 'Roboto', sans-serif;  /* Fonte moderna e legível */
+    line-height: 1.4;  /* Reduz a altura da linha para aproximar os textos */
+    background-color: #f7f7f7;  /* Cor de fundo clara */
+    color: #fcfcfc;  /* Cor de texto escura */
+    padding: 20px;  /* Espaçamento interno */
+    text-align: justify;  /* Justifica o texto */
+}
+
+/* Carrega a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Estilo para o texto dos parágrafos */
+p {
+    font-size: 1rem;  /* Tamanho de fonte adequado */
+    margin-bottom: 1.2rem;  /* Menor espaçamento entre os parágrafos */
+    text-align: justify;  /* Justifica o texto */
+    text-justify: inter-word;  /* Melhora a justificação */
+    letter-spacing: 0.5px;  /* Um pequeno espaçamento entre as letras */
+    color: #f3ebeb;  /* Cor de texto levemente mais clara */
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; 
+    color: #f1eeee;  
+    margin-bottom: 0.8rem;  
+}
+
+/* Título h1 */
+h1 {
+    font-size: 2.2rem;  
+    font-weight: 700;
+    text-align: center;  /* Centraliza o título */
+    margin-top: 1rem;
+}
+
+/* Títulos menores (h2, h3, etc.) */
+h2 {
+    font-size: 1.8rem;  /* Tamanho médio */
+    font-weight: 600;
+    margin-top: 1.2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* Links */
+a {
+    text-decoration: none;  /* Remove o sublinhado dos links */
+    color: #007BFF;  /* Cor azul para links */
+    transition: color 0.3s ease;  /* Transição suave na cor do link */
+}
+
+a:hover {
+    color: #0056b3;  /* Cor mais escura quando o link é hover */
+}
+
+/* Adiciona um leve sombreamento para textos especiais */
+em, strong {
+    font-weight: bold;
+    color: #333;
+}
+
+em {
+    font-style: italic;  /* Deixa os textos em itálico */
+    color: #777;  /* Cor mais suave para ênfases */
+}
+
+/* Lista */
+ul, ol {
+    margin-left: 2rem;  /* Indenta a lista */
+}
+
+li {
+    margin-bottom: 0.4rem;  /* Menor espaçamento entre os itens da lista */
+}
+
+/* Espaçamento extra nas seções */
+section {
+    margin-bottom: 1.8rem;  /* Espaço entre as seções */
+}
+
+/* Ajuste de larguras para containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+        
+        body{ 
+            background-color:#000814ff ;
+                height: 100vh;
+        }
+
+        .interfaçe{
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .btn-contacto button{
+            padding: 10px 10px;
+            font-size: 18px;
+            font-weight: 18px;
+            background-color: darkgoldenrod;
+            border: 0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+
+        h2.Titulo{
+            color: rgb(230, 227, 226);
+            font-size: 40px;
+            text-align: center;
+        }
+
+
+            h2.Titulo span{
+                color:aqua;
+            }
+
+
+
+        /* ESTILO DO CABEÇALHO */
+        header{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            color: #5c5c5c;
+            display: flex;
+            justify-content: center;
+         padding: 10px 4%;
+         background-color: #000000;
+         color: #059494;
+         gap: 60px;
+         
+         
+     }
+
+        header .interfaçe{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header a{
+            color: #bb8000cc;
+            text-decoration: none;
+            display: inline-block;
+            transition: .2s;
+        }
+
+        header nav a:hover{
+            color:#04aa8ecc;
+            transform: scale(2);
+        }
+
+        header nav ul{
+            list-style-type: none;
+        }
+
+        header nav ul li{
+        display: inline-block;
+        padding: 0 40PX;
+        }
+
+        .btn-contacto button:hover, form .btn-enviar input:hover{
+                box-shadow: 0px 0px 2px #5c5c5c;
+                transform: scale(1.5);
+                
+            }
+
+       
+        /* ESILO DO TOPO DO SITE */
+                section.topo-do-site{
+                    padding: 40px 4%;
+                }
+
+                section.topo-do-site .flex{
+                align-items: center;
+                justify-content: center;
+                gap: 100px;
+                margin: 100px;
+                }
+
+                .topo-do-site h1{
+                    color: rgb(233, 226, 217);
+                    font-size: 45px;
+                    line-height: 40px;
+                }
+
+                .topo-do-site .txt-topo-site h1 span{
+                color: #059494;
+                font-size: 70px;
+                }
+
+                .topo-do-site .txt-topo-site p{
+                    color: antiquewhite;
+                    margin: 40px 0px;
+                    font-family: Arial, Helvetica, sans-serif;
+                
+                }
+
+            .topo-do-site .img-topo-site img{
+                position: relative;
+                animation: flutuar 3s ease-in-out infinite alternate;
+                width: 200px;
+                height: 200px;
+                border-radius: 60%;
+                border: 5px solid rgb(255, 217, 0);
+                
+            }
+
+                @keyframes flutuar{
+                    0%{
+                        top: 0;
+                    }
+                    100%{
+                        top: 30px
+                    }
+            }
+
+            /* Estilo Especializaçoes */
+            section.Espeçialidades{
+                padding: 40px 4%;
+            }
+
+            section.Espeçialidades .flex{
+                gap: 60px;
+            }
+
+            .Espeçialidades .Espeçialidades-Box{
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 40px;
+                border-radius: 20px;
+                margin-top: 45px;
+                transition: .2s;
+            }
+
+
+            .Espeçialidades .Espeçialidades-Box:hover{
+                transform: scale(1.08);
+                box-shadow: 0 0 30px rgb(2, 211, 176);
+            }
+            
+            .Espeçialidades .Espeçialidades-Box h3{
+                font-size: 30px;
+                margin: 15px 0;
+                }
+
+        /* Estilo do Sobre */
+        section.Sobre {
+            padding: 80px 4%;
+        }
+            section.Sobre .flex{
+            align-items: center;
+            gap: 60px;
+            }
+
+        .Sobre .img-sobre img{
+            width: 300px;
+            height: 300px;
+            border: 5px solid rgb(255, 217, 0);
+        }
+
+        .Sobre  .txt-sobre {
+            color: #fdeeee;
+        }
+
+        .Sobre  .txt-sobre h2{
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .Sobre  .txt-sobre h2 span{
+            color: aqua;
+            display: block;
+        }
+        
+        .Sobre  .txt-sobre p{
+            margin: 20px 0;
+            text-align: justify;
+        }
+
+        /* Estilo do Portifólio */
+        section.Portifólio{
+            padding: 80px 4%;
+            box-shadow: 0 0 40px 10px rgba(0, 255, 255, 0.452);
+        }
+
+        section.Portifólio .flex{
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+
+
+        .img-port{
+            width: 360px;
+            height: 460px;
+            background-size: cover;
+            background-position: 10% 10%;
+            transition: 8s;
+            cursor: pointer;
+            border-radius: 40px;
+            position: relative;
+        }
+
+        .img-port:hover{
+            background-position: 100% 100%;
+        }
+
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(20, 20, 20, 0.322);
+            border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+        opacity: 0;
+        transition: .5s; 
+        }
+
+        .overlay:hover{
+        opacity: 1;
+        }
+
+        /* ESTILO DO FORMULARIO DE CONTACTO */
+        section.Formulário{
+            padding: 80px 4%;
+        }
+
+        form{
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 40px;
+        }
+
+        form input, form textarea{
+            width: 100%;
+            background-color: rgba(139, 94, 94, 0.575);
+            border: 0;
+            outline: 0;
+            padding: 20px 15px;
+            border-radius: 15px;
+            color: white;
+            font-size: 18px;
+        }
+
+        form textarea{
+        resize: none;
+        max-height: 200px;
+        }
+
+        form .btn-enviar{
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        form .btn-enviar input{
+            width: 120px;
+            background-color: rgb(226, 211, 0);
+            font-weight: 700;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        /* ESTILO DO RODAPE*/
+        footer{
+        padding: 1px 4%;
+            box-shadow: 0 0 60px 10px rgb(2, 255, 213);  
+            margin: 100px;
+        }
+
+
+        .btn-social ul{
+            list-style-type: none;
+
+            display: flex;
+        
+            position: relative;
+
+            gap: 40px;
+        }
+        
+        .btn-social ul li{
+            width: 70px;
+            height: 70px;
+
+            background-color: #fdfdfd73;
+            box-shadow: 0 8px 25px rgba(243, 179, 2, 0.5);
+            border-radius: 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+
+            transition: .2s;
+        }
+
+        .btn-social ul li:hover{
+            width: 180px;
+        }
+
+        .btn-social ul li span{
+            position: absolute;
+        }
+
+        .btn-social ul li .icon{
+            color: #00000050;
+            font-size: 2.2em;
+            transition: 2.2s;
+        }
+
+        .btn-social ul li .text{
+            color: white;
+            font-size: 20px;
+            transform: scale(0);
+            transition: 2.2s;
+            transition-delay: .2s;
+        }
+
+
+        .btn-social ul li:hover .text{
+            transform: scale(1);
+        }
+
+        .btn-social ul li:hover .icon{
+            transform: scale(0);
+        }
+        
+
+        .btn-social ul li::before{
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+            inset: 0;
+            opacity: 0;
+            border-radius: 60px;
+        }
+        
+        .btn-social ul li:hover::before{
+            opacity: 1;
+        }
+
+        footer .line-footer{
+            padding: 20px 0;
+        }
+
+        .borda{
+        border-top: 5px solid rgb(3, 196, 164);
+        
+        }
+
+        footer .line-footer p{
+            color: #aa9104;
+            text-align: center;
+        }
+
+
+
+        
+        @media screen and (max-widh: 1020px)
+            /* Classes Gerais */
+            .flex{
+                flex-direction: column;
+            }
+
+            h2.Titulo{
+                color: aliceblue;
+                font-size: 40px;
+                text-align: center;
+            }
+            h2.Titulo{
+                font-size: 34px;
+                line-height: 30px;
+        
+
+            .topo-do-site .flex{
+                flex-direction: column-reverse;
+            }
+
+            /* Cabeçalho */
+            .menu-deskop, .btn-contacto{
+                display: none;
+            }
+
+        /* ESILO DO TOPO DO SITE */
+        section.topo-do-site .flex{
+            gap: 40px;
+        }
+
+
+
+        section.topo-do-site{
+            padding: 20px 8%;
+        }
+
+        .topo-do-site h1{
+            font-size: 30px;
+            line-height: 40px;
+        }     
+
+        .topo-do-site .img-topo-site img{
+            width: 100px;  
+        }
+
+        /* Estilo Especializaçoes */
+        section.Espeçialidades{
+            padding: 40px 8%;
+        }
+
+        /* Sessao Sobre */ 
+        section.Sobre {
+            padding: 80px 8%;
+        }
+
+        .Sobre  .txt-sobre h2{
+            font-size: 34px;
+            line-height: 35px;
+        text-align: center;
+        }
+
+        .Sobre .img-sobre img{
+            width: 100%;
+        }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

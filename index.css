@@ -1,112 +1,27 @@
         /* ESTILO GERAL*/
+        nav{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+        }
+          
 
-       /* Estilo global para todo o corpo */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo para o body */
-body {
-    font-family: 'Roboto', sans-serif;  /* Fonte moderna e legível */
-    line-height: 1.4;  /* Reduz a altura da linha para aproximar os textos */
-    background-color: #f7f7f7;  /* Cor de fundo clara */
-    color: #fcfcfc;  /* Cor de texto escura */
-    padding: 20px;  /* Espaçamento interno */
-    text-align: justify;  /* Justifica o texto */
-}
-
-/* Carrega a fonte Roboto do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-/* Estilo para o texto dos parágrafos */
-p {
-    font-size: 1rem;  /* Tamanho de fonte adequado */
-    margin-bottom: 1.2rem;  /* Menor espaçamento entre os parágrafos */
-    text-align: justify;  /* Justifica o texto */
-    text-justify: inter-word;  /* Melhora a justificação */
-    letter-spacing: 0.5px;  /* Um pequeno espaçamento entre as letras */
-    color: #f3ebeb;  /* Cor de texto levemente mais clara */
-}
-
-/* Títulos */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif; 
-    color: #f1eeee;  
-    margin-bottom: 0.8rem;  
-}
-
-/* Título h1 */
-h1 {
-    font-size: 2.2rem;  
-    font-weight: 700;
-    text-align: center;  /* Centraliza o título */
-    margin-top: 1rem;
-}
-
-/* Títulos menores (h2, h3, etc.) */
-h2 {
-    font-size: 1.8rem;  /* Tamanho médio */
-    font-weight: 600;
-    margin-top: 1.2rem;
-}
-
-h3 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-top: 1rem;
-}
-
-/* Links */
-a {
-    text-decoration: none;  /* Remove o sublinhado dos links */
-    color: #007BFF;  /* Cor azul para links */
-    transition: color 0.3s ease;  /* Transição suave na cor do link */
-}
-
-a:hover {
-    color: #0056b3;  /* Cor mais escura quando o link é hover */
-}
-
-/* Adiciona um leve sombreamento para textos especiais */
-em, strong {
-    font-weight: bold;
-    color: #333;
-}
-
-em {
-    font-style: italic;  /* Deixa os textos em itálico */
-    color: #777;  /* Cor mais suave para ênfases */
-}
-
-/* Lista */
-ul, ol {
-    margin-left: 2rem;  /* Indenta a lista */
-}
-
-li {
-    margin-bottom: 0.4rem;  /* Menor espaçamento entre os itens da lista */
-}
-
-/* Espaçamento extra nas seções */
-section {
-    margin-bottom: 1.8rem;  /* Espaço entre as seções */
-}
-
-/* Ajuste de larguras para containers */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-        
         body{ 
             background-color:#000814ff ;
                 height: 100vh;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                
+        }
+        
+        p{
+            font-size: 1rem;
+            text-align: justify;
+            text-justify: inter-word;
+            letter-spacing: 0.5px;
         }
 
+       
         .interfaçe{
             max-width: 1280px;
             margin: 0 auto;
@@ -171,7 +86,7 @@ section {
             transition: .2s;
         }
 
-        header nav a:hover{
+        header nav.menu-deskop a:hover{
             color:#04aa8ecc;
             transform: scale(2);
         }
@@ -180,7 +95,7 @@ section {
             list-style-type: none;
         }
 
-        header nav ul li{
+        header nav.menu-deskop  ul li{
         display: inline-block;
         padding: 0 40PX;
         }
@@ -191,7 +106,70 @@ section {
                 
             }
 
+            /* Estilo do menu mobile */
+            .btn-abrir-menu i{
+                color: rgb(230, 190, 12);
+                font-size: 40px;
+            }
+            
+            
+            .menu-mobile{
+                    background: rgb(0, 0, 0);
+                    height: 100vh;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 99999;
+                    width: 0%;
+                    overflow: hidden;
+                    transition: .2s;
+                }
+
+                .menu-mobile.abrir-menu{
+                    width: 12%;
+                }
+
+                .menu-mobile .btn-fechar{
+                    padding: 20px 5%;
+                }
+
+                .menu-mobile.abrir-menu ~ .overlay-menu{
+                    display: block;
+                }
+
+                .menu-mobile .btn-fechar i{
+                color: rgb(228, 195, 8), 196, 170);
+                font-size: 30px;
+                }
+                
+                .menu-mobile nav ul{
+                    text-align: right;
+                }
        
+                .menu-mobile nav ul li a{
+                    color: aqua;
+                    font-size: 20px;
+                    font-weight: 300;
+                    padding: 20px 8%;
+                    display: block;
+                } 
+                
+                .menu-mobile nav ul li a:hover{
+                    background-color: rgb(0, 0, 0);
+                    color: #aa9104;
+                }
+
+                .overlay-menu{
+                    background-color: #181818e1;
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 88888;
+                    display: none;
+                }
+
         /* ESILO DO TOPO DO SITE */
                 section.topo-do-site{
                     padding: 40px 4%;

@@ -658,19 +658,28 @@
             margin: 100px;
            
         }
-
-      
         .btn-social ul{
          gap: 0px;
         } 
     
         
         .btn-social ul li{
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;    
+        }
 
-            
+        .btn-social ul li:hover{
+            width: 11px;
+        }
+
+        .btn-social ul li .text{
+            color: white;
+            font-size: 6px;
+            transform: scale(0);
+            transition: 2.2s;
+            transition-delay: .2s;
         }
     }
+
            
     
